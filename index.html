@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NASA Space Apps Challenge</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="overlay"></div>
+
+<header>
+  <h1>NASA Space Apps Challenge</h1>
+  <p>Explore, Observe, and Contribute to Planet Earth and Space Data</p>
+</header>
+
+<section class="cards">
+  <div class="card">
+    <img src="images/satellite.jpg" alt="Satellite">
+    <h3>Wildflower Monitoring</h3>
+    <p>Track seasonal blooms using NASA satellite data.</p>
+    <button class="button">View Data</button>
+  </div>
+
+  <div class="card">
+    <img src="images/space.jpg" alt="Space">
+    <h3>Air Quality Tracker</h3>
+    <p>Visualize real-time air pollution levels.</p>
+    <button class="button">Explore</button>
+  </div>
+
+  <div class="card">
+    <img src="images/climate.jpg" alt="Climate">
+    <h3>Climate Insights</h3>
+    <p>Study environmental changes over time.</p>
+    <button class="button">Analyze</button>
+  </div>
+</section>
+
+<!-- Chart Section -->
+<section class="chart-section">
+  <h2>Air Quality Over Time</h2>
+  <div class="filters">
+    <button class="button" onclick="updateChart('PM2.5')">PM2.5</button>
+    <button class="button" onclick="updateChart('Ozone')">Ozone</button>
+  </div>
+  <canvas id="airQualityChart" width="400" height="200"></canvas>
+</section>
+
+<footer>
+  &copy; 2025 Designed by Snorita Asrafee | NASA Space Apps Challenge
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
